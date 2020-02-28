@@ -1,0 +1,13 @@
+{
+    "_comment": "ref: https://github.com/prettier/prettier/blob/master/docs/options.md",
+    "printWidth": 80,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "parser": "markdown",
+    "proseWrap": "always",
+    "htmlWhitespaceSensitivity": "strict"
+}
