@@ -2,7 +2,7 @@
 
 ## Algorithm
 
-```json
+```javascript
 {
     "name": "scrypt",
     "variant": "ltc-origin", // an additional remark for algorithm name
@@ -14,7 +14,7 @@
 
 port is an object contains the configs for guiding users to quick start mining on your pool
 
-```json
+```javascript
 {
     "host": "192.168.1.101",
     "port": 10086,
@@ -32,7 +32,7 @@ port is an object contains the configs for guiding users to quick start mining o
 
 ## Block
 
-```json
+```javascript
 {
     "difficulty": 539702861270356, // float64
     "hash":"8d04b7f92faba60fdc071304c1d1260daed0dd6a30def76dc3e322589b867762",

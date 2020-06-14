@@ -1,5 +1,15 @@
 # Config
 
+## Path "/config"
+
+all available configs 
+
+```javascript
+[
+    "/config/ports", "/config/coin", "/config/api"
+]
+```
+
 ## Path "/config/ports"
 
 GET

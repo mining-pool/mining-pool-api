@@ -12,7 +12,7 @@ GET
 
 fetch a table about all paths' status (available or not)
 
-```json
+```javascript
 {
     "path1": true, // response of path1
     "path2": false, // response of path2
@@ -39,21 +39,23 @@ TODO
 
 #### Path "/algorithm"
 
-We are recommend to deploy different algorithm stratum port with different mining pool instance, so it means the frontend page have to deal with multi-api-server circumstance.
+We are recommend to deploy different algorithm stratum port with different
+mining pool instance, so it means the frontend page have to deal with
+multi-api-server circumstance.
 
-- GET
+-   GET
 
 Get all algorithms
 
-- POST
+-   POST
 
 POST on '/algorithm' is meaning for being compatible multi-algorithms coins
 
 ```json
 {
-  "name": "scrypt",
-  "variant": "ltc-origin",
-  "blobType": ""
+    "name": "scrypt",
+    "variant": "ltc-origin",
+    "blobType": ""
 }
 ```
 
@@ -65,17 +67,17 @@ lucky = 1 / effort
 
 More lucky means more benefit when same hashrate
 
-- GET
+-   GET
 
 ```json
 {
-  "1d": 0.99,
-  "7d": 1.01,
-  "1m": 1.11,
+    "1d": 0.99,
+    "7d": 1.01,
+    "1m": 1.11
 }
 ```
 
-- POST
+-   POST
 
 e.g.
 
@@ -83,26 +85,15 @@ request with body, aiming to fetch luckies between these 14 days.
 
 ```json
 {
-  "start": "1-Jan-2020",
-  "end": "10-Jan-2020"
+    "start": "1-Jan-2020",
+    "end": "10-Jan-2020"
 }
 ```
 
 pool returns a list
 
 ```json
-[
-  "1.1",
-  "1.11",
-  "0.9",
-  "0.98",
-  "0.7",
-  "1.5",
-  "1.11",
-  "0.9",
-  "0.98",
-  "1"
-]
+["1.1", "1.11", "0.9", "0.98", "0.7", "1.5", "1.11", "0.9", "0.98", "1"]
 ```
 
 #### Path "/effort"
@@ -113,17 +104,17 @@ effort = 1 / lucky
 
 More lucky means more benefit when same hashrate
 
-- GET
+-   GET
 
 ```json
 {
-  "1d": 1.01,
-  "7d": 0.99,
-  "1m": 0.91,
+    "1d": 1.01,
+    "7d": 0.99,
+    "1m": 0.91
 }
 ```
 
-- POST
+-   POST
 
 e.g.
 
@@ -131,24 +122,13 @@ request with body, aiming to fetch efforts between these 14 days.
 
 ```json
 {
-  "start": "1-Jan-2020",
-  "end": "10-Jan-2020"
+    "start": "1-Jan-2020",
+    "end": "10-Jan-2020"
 }
 ```
 
 pool returns a list
 
 ```json
-[
-  "1.1",
-  "1.11",
-  "0.9",
-  "0.98",
-  "0.7",
-  "1.5",
-  "1.11",
-  "0.9",
-  "0.98",
-  "1"
-]
+["1.1", "1.11", "0.9", "0.98", "0.7", "1.5", "1.11", "0.9", "0.98", "1"]
 ```

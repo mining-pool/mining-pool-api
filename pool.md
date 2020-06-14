@@ -6,7 +6,7 @@ GET
 
 Stats shows the pool basic mining status.
 
-```json
+```javascript
 {
     "minerCount": 10,
     "rigCount": 20,
@@ -21,7 +21,7 @@ Stats shows the pool basic mining status.
 
 GET
 
-```json
+```javascript
 
 {
     "height": 1187802,
@@ -40,7 +40,7 @@ Can also POST with limitation
 
 Get all blocks mined between 1-Jan-2020 and 10-Jan-2020
 
-```json
+```javascript
 {
   "from": "1-Jan-2020",
   "to": "10-Jan-2020"
@@ -49,7 +49,7 @@ Get all blocks mined between 1-Jan-2020 and 10-Jan-2020
 
 Get 100 mined blocks from 1-Jan-2020
 
-```json
+```javascript
 {
   "from": "1-Jan-2020",
   "max": 100, // "max" will be ignored when having a "to"
@@ -58,7 +58,7 @@ Get 100 mined blocks from 1-Jan-2020
 
 Get last(latest) 100 blocks mined by pool
 
-```json
+```javascript
 {
   "max": 100, // "max" will be ignored when having a "to"
 }
@@ -67,7 +67,7 @@ Get last(latest) 100 blocks mined by pool
 
 the return looks like this
 
-```json5
+```javascript
 [
   {
     "difficulty": 539702861270356,
@@ -99,7 +99,7 @@ the return looks like this
 
 last Block Mined
 
-```json
+```javascript
 [
   {
     "difficulty": 539702861270356,
@@ -108,6 +108,6 @@ last Block Mined
     "reward": 4129400000000,
     "timestamp": 1582458302
   },
-  ...
+  // ...
 ]
 ```

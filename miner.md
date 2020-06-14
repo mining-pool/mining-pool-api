@@ -1,10 +1,10 @@
 # Miner
 
-## GET "/miner/:miner"
+## GET "/miner/{miner}"
 
 get the details of miner
 
-## POST "/miner/:miner"
+## POST "/miner/{miner}"
 
 submit the additional miner options to pool, like payment method
 
@@ -19,6 +19,6 @@ submit the additional miner options to pool, like payment method
 
 ```
 
-## GET "/miner/:miner/:rig"
+## GET "/miner/{miner}/{rig}"
 
 get the stats of rig
